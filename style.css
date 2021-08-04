@@ -2,8 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #979913;
+    color: #9f903a;
     font-family: 'Roboto', 'Poppins', sans-serif ;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    /* box-shadow: 1px 1px 10px #fff; */
+    /* border-bottom: 15px ridge #fff; */
+
+    margin-bottom: 50px;
+}
+
+header ul {
+    display: flex;
 }
 
 ul {
@@ -15,6 +30,16 @@ ul {
 
 a {
     text-decoration: none;
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 500ms;
+}
+
+header ul li a:hover {
+    color: #c0a717;
+    text-decoration: underline;
 }
 
 body {
@@ -26,7 +51,9 @@ body {
 }
 
 .container {
+    flex-flow: column;
     text-align: center;
+    justify-content: center;
 }
 
 .container .name h1 {
@@ -38,19 +65,93 @@ body {
 }
 
 #about p {
+    max-width: 90%;
+}
+
+#arrow {
+    font-size: 35px;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: blink .5s steps(5, start) infinite ;
+}
+
+/* Animação pisca */
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 200ms;
+}
+
+#about p {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    transition: 200ms;
+}
+
+/* Important */
+.active {
+    display: block !important ;
 }
 
 .form {
     width: 40%;
     margin: 0 auto;
+    /* border: thick double #fff; */
+    padding: 25px;
+    margin-top: 25px;
 }
 
 .form input {
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
 }
 
 .form button {
-    width: 15%;
+    /* width: 15%; */
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c09717 50%, #c0551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom ;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    border-radius: 0 5px 5px 0;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+/* Media queryes */
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 40px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    .form {
+        width: 100%;
+    }
+    
 }
