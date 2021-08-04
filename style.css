@@ -72,7 +72,7 @@ body {
     font-size: 35px;
     margin: 0 auto;
     cursor: pointer;
-    animation: blink .5s steps(5, start) infinite ;
+    animation: blink 2s steps(5, start) infinite ;
 }
 
 /* Animação pisca */
