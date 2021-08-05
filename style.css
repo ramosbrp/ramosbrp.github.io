@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #9f903a;
+    color: #f4d58d;
     font-family: 'Roboto', 'Poppins', sans-serif ;
 }
 
@@ -38,16 +38,20 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #c0a717;
+    color: #ffba08;
     text-decoration: underline;
 }
 
 body {
     height: 100vh;
-    background: url(./pexels-photo-924824.webp) no-repeat center center fixed;
+    /* background: url(./pexels-photo-924824.webp) no-repeat center center fixed; */
     background-size: cover;
 
     /* background: linear-gradient(90deg, #D65DB1, #2c3e50); */
+    /* background-image: linear-gradient(to right top, #152837, #242b4b, #472652, #6c1746, #830c28); */
+    /* background-image: linear-gradient(to right top, #264653, #225b68, #1c7079, #1b8786, #2a9d8f); */
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background-image: linear-gradient(to right top, #001427, #251d4b, #650d56, #a00040, #bf0603);
 }
 
 .container {
