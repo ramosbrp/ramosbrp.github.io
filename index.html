@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
+    <title>Bruno Ramos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet"> 
+
+    <!-- CDN font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div>
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+
+        <!-- Links -->
+        <ul>
+            <li>
+                <a target="blank" href="https://github.com/ramosbrp">
+                    <img src="./img/github.png" alt="gitHub"> </br>
+                    gitHub</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:bruno.rp45@gmail.com">
+                    <img src="./img/email.png" alt="email"> </br>
+                    e-mail</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/21989140246">
+                    <img src="./img/whatsapp.png" alt="whatsapp"> </br>
+                    whatsapp</a>
+            </li>            
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container" >
+            <!-- Apresentação -->
+            <div class="name" >
+                <h1>Bruno Ramos</h1>
+                <h5>Full-Stack Developer</h5>
+            </div>
+
+            <!-- arrow -->
+            <div onclick="displayAbout()" id="arrow" >
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <!-- texto about me -->
+            <div style="display: none ;" id="about" class="active" >
+                <p>
+                    Olá, eu sou o Bruno sou desenvolvedor web e estudante de engenharia da computação apaixonado por tecnologia.
+                    Minhas technologias: JavaScrypt/TypeScrypt, React, NodeJS, Metodologias Ágeis, Estruturas de Dados, GIT e versionamento de código.
+                </p>
+            </div>
+
+            <!-- Deixar contato -->
+            <div class="form" >
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- JS -->
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
