@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #F2CD5E;
+    color: #fff;
     font-family: 'Roboto', 'Poppins', sans-serif ;
 }
 
@@ -35,6 +35,7 @@ a {
 
 header ul li a {
     transition: 500ms;
+    margin: auto 14px;
 }
 
 header ul li a:hover {
@@ -48,10 +49,10 @@ body {
     background-size: cover;
 
     /* background: linear-gradient(90deg, #D65DB1, #2c3e50); */
-    /* background-image: linear-gradient(to right top, #152837, #242b4b, #472652, #6c1746, #830c28); */
+    background-image: linear-gradient(to right top, #152837, #242b4b, #472652, #6c1746, #830c28);
     /* background-image: linear-gradient(to right top, #264653, #225b68, #1c7079, #1b8786, #2a9d8f); */
     /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
-    background-image: linear-gradient(to right top, #001427, #251d4b, #650d56, #a00040, #bf0603);
+    /* background-image: linear-gradient(to right top, #001427, #251d4b, #650d56, #a00040, #bf0603); */
     /* background-image: radial-gradient(circle, #00010d, #39393f, #727176, #b0b0b2, #f2f2f2); */
 }
 
@@ -118,16 +119,19 @@ body {
 
 .form input {
     height: 46px;
+    font-size: 18px;
     width: 50%;
     padding: 5px 10px;
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
+    color: #F2CD5E;
 }
 
 .form button {
     /* width: 15%; */
     height: 46px;
+    font-size: 18px;
     padding: 5px 10px;
     background: linear-gradient(to right, #c09717 50%, #c0551b 50%);
     background-size: 200% 100%;
