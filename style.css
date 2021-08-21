@@ -35,7 +35,7 @@ a {
 
 header ul li a {
     transition: 500ms;
-    margin: auto 14px;
+    margin: auto 10px;
 }
 
 header ul li a:hover {
@@ -150,6 +150,14 @@ body {
 
 /* Media queryes */
 @media only screen and (max-width: 480px) {
+    #logo {
+        width: 80%;
+    }
+    
+    ul {
+        font-size: 15px;
+    }
+    
     .container .name h1 {
         font-size: 40px;
     }
