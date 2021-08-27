@@ -36,6 +36,7 @@ a {
 header ul li a {
     transition: 500ms;
     margin: auto 10px;
+    color: #f1faee;
 }
 
 header ul li a:hover {
@@ -125,7 +126,7 @@ body {
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #F2CD5E;
+    color: #43aa8b;
 }
 
 .form button {
@@ -142,6 +143,7 @@ body {
     cursor: pointer;
     transition: all 500ms ease-out;
     border-radius: 0 5px 5px 0;
+
 }
 
 .form button:hover {
