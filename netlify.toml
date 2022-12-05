@@ -1,0 +1,4 @@
+[build]
+base = "./frontend-ramos-dev"
+command = "yarn build"
+publish = "./frontend-ramos-dev/build/"
